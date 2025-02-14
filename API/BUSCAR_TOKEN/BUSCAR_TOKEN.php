@@ -28,3 +28,6 @@ if (count($res) > 0) {
 
 echo $result;
 ?>
+
+
+<!-- http://localhost/API_SISGEN/API/BUSCAR_TOKEN/BUSCAR_TOKEN.php -->

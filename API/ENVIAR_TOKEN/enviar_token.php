@@ -6,13 +6,16 @@ require_once __DIR__ . '/../../conexao.php';
 $empresa = "wg solucoes";
 $google_api_key = "01101993";
 
+/* $empresa = $_POST['empresa']; 
+$google_api_key = $_POST['google_api_key']; */
+
 // Preparando o comando SQL para inserção
-$query = $pdo->prepare("INSERT INTO empresas (empresa, google_api_key) VALUES (:empresa, :google_api_key)");
+$query = $pdo->prepare("INSERT INTO empresas (empresa, google_api_key) VALUES (:Empresa, :googlekey)");
 
 // Executando a query
 $query->execute([
-    'empresa' => $empresa,
-    'google_api_key' => $google_api_key
+    'Empresa' => $empresa,
+    'googlekey' => $google_api_key
 ]);
 
 // Verificando se a inserção foi bem-sucedida
@@ -24,3 +27,7 @@ if ($query->rowCount() > 0) {
 
 echo $result;
 ?>
+
+
+
+<!-- http://localhost/API_SISGEN/API/ENVIAR_TOKEN/enviar_token.php -->
