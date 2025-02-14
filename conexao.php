@@ -1,5 +1,6 @@
 <?php
 $servidor = "localhost";
+/* $porta = "";   para banco real adicione este e ;port=$porta; no pdo */
 $usuario_db = "root";
 $senha_db = "";
 $banco = "sisgen"; 
@@ -14,3 +15,7 @@ try {
     exit;
 }
 ?>
+
+
+
+
